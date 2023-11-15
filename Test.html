@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .content {
+            display: flex;
+            flex: 0 0 60vh;
+        }
+
+        .contentMain {
+            flex: 1;
+            background: lightblue;
+            display: flex;
+            flex-direction: row;
+            /* default setting; can be omitted */
+            flex-wrap: wrap;
+        }
+        .nav,
+        .ads {
+            /* 12em is the width of the columns */
+            flex: 0 0 12em;
+        }
+        .nav {
+            /* put the nav on the left */
+            order: -1;
+            background: salmon;
+        }
+
+        .ads {
+            background: green;
+        }
+
+        header,
+        footer {
+            flex: 0 0 20vh;
+            background: #ccc;
+        }
+
+        /*Nested Content*/
+        .ucleft {
+            flex: 1 0 33.33%;
+            background-color: gray;
+        }
+
+        .uccenter {
+            flex: 1 0 33.33%;
+            background-color: red;
+        }
+
+        .ucright {
+            flex: 1 0 33.33%;
+            background-color: green;
+        }
+
+        .middlecontent {
+            flex: 0 0 100%;
+            background-color: blue;
+        }
+
+        .lowercontent {
+            flex: 0 0 100%;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body class="page">
+    <header>Header</header>
+    <div class="content">
+        <div class="contentMain">
+            <div class="ucleft">Upper Content Left</div>
+            <div class="uccenter">Upper Content Center</div>
+            <div class="ucright">Upper Content Right</div>
+            <div class="middlecontent">Middle Content</div>
+            <div class="lowercontent">Lower Content</div>
+        </div>
+        <nav class="nav">Nav</nav>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>
