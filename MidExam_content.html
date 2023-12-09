@@ -47,6 +47,7 @@
             background-color: red;
             color: white;
             min-height: 200px;
+            margin: 5px;
         }
 
         .columnB {
@@ -56,16 +57,17 @@
             text-align: justify;
             background-color: yellow;
             min-height: 200px;
-
+            margin: 5px;
         }
 
         .columnC {
             float: left;
-            width: 33.4%;
+            width: 33.3%;
             padding: 15px;
             text-align: justify;
             background-color: pink;
             min-height: 200px;
+            margin: 5px;
         }
 
         h1 {
@@ -93,24 +95,30 @@
             width: 30px;
             height: auto;
         }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgrey;
+        }
     </style>
 
 </head>
 
 <body class="page">
-    <div class="header">
+    <div id="Home" class="header">
         <h2 style="color:white;font-size:250%"> Welcome to my comapny</h2>
     </div>
 
     <!-- navigation menu of website layout -->
     <div class="nav_menu">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Contract</a>
+        <a href="#Home">Home</a>
+        <a href="#Project">Projects</a>
+        <a href="#Contract">Contract</a>
     </div>
 
     <!-- Content section of website layout -->
-    <div class="row">
+    <div id="Project" class="row">
 
         <div class="columnA">
             <h1>Project A</h1>
@@ -143,9 +151,11 @@
             </p>
 
         </div>
+
+
     </div>
 
-    <div class="footer">
+    <div id="Contract" class="footer">
         <img class="logo" src="Resource/Mail.png">
         <img class="logo" src="Resource/FB.jpg">
         <img class="logo" src="Resource/Git.png">
