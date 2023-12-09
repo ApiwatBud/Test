@@ -39,43 +39,59 @@
         }
 
         /* CSS property for content section */
-        .columnA{
+        .columnA {
             float: left;
-            width: 33%;
+            width: 33.3%;
             padding: 15px;
             text-align: justify;
-            background-color:red;
+            background-color: red;
             color: white;
-            min-height: 500px;
+            min-height: 200px;
         }
-        .columnB{
+
+        .columnB {
             float: left;
-            width: 33%;
+            width: 33.3%;
             padding: 15px;
             text-align: justify;
             background-color: yellow;
-            min-height: 500px;
+            min-height: 200px;
 
         }
+
         .columnC {
             float: left;
-            width: 33%;
+            width: 33.4%;
             padding: 15px;
             text-align: justify;
             background-color: pink;
-            min-height: 500px;
+            min-height: 200px;
         }
 
         h1 {
             color: blue;
             text-align: center;
         }
-        .img{
-            width: 100px;;
+
+        .img {
+            width: 100px;
             height: 100px;
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .footer {
+            border: solid 2px #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 30px;
+            height: auto;
         }
     </style>
 
@@ -98,7 +114,7 @@
 
         <div class="columnA">
             <h1>Project A</h1>
-            <img class = "img" src = "Resource/Test.jpg" >
+            <img class="img" src="Resource/Test.jpg">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus, doloribus dolorem
                 provident sit eius voluptate aut, molestias odio eveniet soluta obcaecati magnam et veritatis at totam?
@@ -109,7 +125,7 @@
 
         <div class="columnB">
             <h1>Project B</h1>
-            <img class = "img" src = "Resource/Test.jpg" >
+            <img class="img" src="Resource/Test.jpg">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus, doloribus dolorem
                 provident sit eius voluptate aut, molestias odio eveniet soluta obcaecati magnam et veritatis at totam?
@@ -119,7 +135,7 @@
 
         <div class="columnC">
             <h1>Project C</h1>
-            <img class = "img" src = "Resource/Test.jpg" >
+            <img class="img" src="Resource/Test.jpg">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, accusamus, doloribus dolorem
                 provident sit eius voluptate aut, molestias odio eveniet soluta obcaecati magnam et veritatis at totam?
@@ -127,6 +143,13 @@
             </p>
 
         </div>
+    </div>
+
+    <div class="footer">
+        <img class="logo" src="Resource/Mail.png">
+        <img class="logo" src="Resource/FB.jpg">
+        <img class="logo" src="Resource/Git.png">
+        <img class="logo" src="Resource/linked.png">
     </div>
 </body>
 
